@@ -3,13 +3,14 @@
 	"version": "1.0.0",
 	"description": "Get connector filter builder for AFAS",
 	"scripts": {
-		"test": "test",
+		"test": "jest test",
 		"prepare": "husky",
 		"format": "prettier --write . --cache --ignore-path=.prettierignore",
 		"build": "tsup",
 		"check-exports": "attw --pack .",
 		"changeset": "npx changeset",
-		"local-release": "changeset version && changeset publish"
+		"local-release": "changeset version && changeset publish",
+		"compile": "tsc --noEmit"
 	},
 	"repository": {
 		"type": "git",
