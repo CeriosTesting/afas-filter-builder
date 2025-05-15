@@ -1,0 +1,17 @@
+export enum Operator {
+	EqualTo = 1,
+	GreaterThanOrEqualTo = 2,
+	LessThanOrEqualTo = 3,
+	GreaterThen = 4,
+	LessThen = 5,
+	Contains = 6,
+	NotEqualTo = 7,
+	IsEmpty = 8,
+	IsNotEmpty = 9,
+	StartsWith = 10,
+	DoesntContain = 11,
+	DoesntStartWith = 12,
+	EndsWith = 13,
+	DoesntEndWith = 14,
+	QuickFilter = 15,
+}

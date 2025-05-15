@@ -1,0 +1,55 @@
+{
+	"name": "@cerios/afas-filter-builder",
+	"version": "1.0.0",
+	"description": "Get connector filter builder for AFAS",
+	"scripts": {
+		"test": "test",
+		"prepare": "husky",
+		"format": "prettier --write . --cache --ignore-path=.prettierignore",
+		"build": "tsup",
+		"check-exports": "attw --pack .",
+		"changeset": "npx changeset",
+		"local-release": "changeset version && changeset publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CeriosTesting/afas-filter-builder.git"
+	},
+	"keywords": [
+		"afas",
+		"GetConnector",
+		"filter"
+	],
+	"author": "Ronald Veth - Cerios",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/CeriosTesting/afas-filter-builder/issues"
+	},
+	"homepage": "https://github.com/CeriosTesting/afas-filter-builder#readme",
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.18.1",
+		"@changesets/cli": "^2.29.4",
+		"@types/jest": "^29.5.14",
+		"husky": "^9.1.7",
+		"jest": "^29.7.0",
+		"lint-staged": "^16.0.0",
+		"prettier": "^3.5.3",
+		"ts-jest": "^29.3.3",
+		"tsup": "^8.4.0",
+		"typescript": "^5.8.3"
+	},
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"type": "commonjs",
+	"exports": {
+		"./package.json": "./package.json",
+		".": {
+			"import": "./dist/index.mjs",
+			"default": "./dist/index.js"
+		}
+	}
+}
