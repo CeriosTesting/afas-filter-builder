@@ -15,7 +15,13 @@ A TypeScript library for building filters and query parameters for AFAS GetConne
 Install the library using npm:
 
 ```bash
-npm install afas-filter-builder
+npm i @cerios/afas-filter-builder
+```
+
+Dev
+
+```bash
+npm i -D @cerios/afas-filter-builder
 ```
 
 ## Usage
